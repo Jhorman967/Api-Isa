@@ -1,0 +1,61 @@
+ components:
+    schemas:
+      Vendors:
+        type: object
+        required:
+          - name
+          - alias
+          - dni
+          - type
+        properties:
+          id:
+            type: integer
+            description: The auto-generated id of the vendors.
+          name:
+            type: string
+            description: The name of your vendors.
+          alias:
+            type: string
+            description: alias the vendors
+          dni:
+            type: integer
+            description: code of the dni
+          type:
+            type: integer
+            description: The type of your vendors.
+        example:
+          name: camilo
+          alias: cami
+          dni: 1090674936
+          type: 1
+      User:
+        type: object
+        required:
+          - username
+          - email
+          - password
+        properties:
+          id:
+            type: integer
+            description: The auto-generated id of the task.
+          username:
+            type: string
+            description: The username.
+          email:
+            type: string
+            description: username email
+          password:
+            type: string
+            description: password username
+          createdAt:
+            type: string
+            format: date
+            description: The date of the record creation.
+          updateAt:
+            type: string
+            format: date
+            description: The date of the record update.
+        example:
+          username: jniodfn943
+          email: email@gmail.com
+          password: 827s34ddfs 
